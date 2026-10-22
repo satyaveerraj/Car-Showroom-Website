@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Motors India | Luxury & Performance Car Showroom</title>
+    <title>Apex Motors India | Ultimate Car Showroom & Budget Finder</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -31,26 +31,12 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Poppins', sans-serif;
-        }
-        /* Custom scrollbar for luxury feel */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #020617;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1e293b;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #334155;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #334155; }
     </style>
 </head>
 <body class="bg-apex-950 text-slate-100 antialiased selection:bg-apex-accent selection:text-apex-950">
@@ -59,51 +45,46 @@
     <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
     <!-- FLOATING WHATSAPP BUTTON -->
-    <a href="https://wa.me/919876543210?text=Hello%20Apex%20Motors%20India,%20I%20would%20like%20to%20enquire%20about%20luxury%20cars." target="_blank" class="fixed bottom-6 left-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all transform hover:scale-110" title="Chat on WhatsApp">
+    <a href="https://wa.me/919876543210?text=Hello%20Apex%20Motors%20India,%20I%20would%20like%20to%20enquire%20about%20car%20pricing%20and%20availability." target="_blank" class="fixed bottom-6 left-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all transform hover:scale-110" title="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp text-2xl"></i>
     </a>
 
     <!-- HEADER / NAVIGATION -->
     <header class="fixed top-0 left-0 right-0 z-40 bg-apex-950/90 backdrop-blur-md border-b border-slate-800/80 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
             <a href="#" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-apex-accent to-amber-600 flex items-center justify-center shadow-lg shadow-apex-accent/20 group-hover:scale-105 transition-transform">
-                    <i class="fa-solid fa-crown text-apex-950 text-lg"></i>
+                    <i class="fa-solid fa-car text-apex-950 text-lg"></i>
                 </div>
                 <div>
                     <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-apex-accent bg-clip-text text-transparent">APEX MOTORS</span>
-                    <span class="block text-[10px] uppercase tracking-widest text-apex-accent font-semibold">India Flagship Showroom</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-apex-accent font-semibold">India Mega Showroom</span>
                 </div>
             </a>
 
-            <!-- Desktop Nav Links -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
                 <a href="#catalog" class="hover:text-apex-accent transition-colors">Showroom</a>
-                <a href="#configurator" class="hover:text-apex-accent transition-colors">3D Studio</a>
+                <a href="#budget-section" class="hover:text-apex-accent transition-colors">Budget Cars</a>
                 <a href="#calculator" class="hover:text-apex-accent transition-colors">EMI Calculator</a>
                 <a href="#compare" class="hover:text-apex-accent transition-colors">Compare (<span id="compare-count">0</span>)</a>
                 <a href="#about" class="hover:text-apex-accent transition-colors">About Us</a>
                 <a href="#contact" class="hover:text-apex-accent transition-colors">Contact</a>
             </nav>
 
-            <!-- CTA Actions -->
             <div class="hidden sm:flex items-center gap-4">
                 <button onclick="openTestDriveModal()" class="px-5 py-2.5 rounded-full bg-apex-accent hover:bg-apex-accentHover text-apex-950 font-semibold text-sm transition-all shadow-lg shadow-apex-accent/20 flex items-center gap-2">
                     <i class="fa-regular fa-calendar-days"></i> Book Test Drive
                 </button>
             </div>
 
-            <!-- Mobile Menu Button -->
             <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg text-slate-300 hover:bg-slate-800">
                 <i class="fa-solid fa-bars text-xl"></i>
             </button>
         </div>
 
-        <!-- Mobile Nav Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-apex-900 border-b border-slate-800 px-6 py-4 flex flex-col gap-4">
-            <a href="#catalog" onclick="toggleMobileMenu()" class="text-slate-300 hover:text-apex-accent">Showroom</a>
-            <a href="#configurator" onclick="toggleMobileMenu()" class="text-slate-300 hover:text-apex-accent">3D Studio</a>
+            <a href="#catalog" onclick="toggleMobileMenu()" class="text-slate-300 hover:text-apex-accent">Showroom Catalog</a>
+            <a href="#budget-section" onclick="toggleMobileMenu()" class="text-slate-300 hover:text-apex-accent">Budget Friendly Cars</a>
             <a href="#calculator" onclick="toggleMobileMenu()" class="text-slate-300 hover:text-apex-accent">EMI Calculator</a>
             <a href="#compare" onclick="toggleMobileMenu()" class="text-slate-300 hover:text-apex-accent">Compare Cars</a>
             <a href="#about" onclick="toggleMobileMenu()" class="text-slate-300 hover:text-apex-accent">About Us</a>
@@ -115,50 +96,80 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section class="relative min-h-[90vh] flex items-center justify-center pt-24 overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=2000" alt="Luxury Car Showroom" class="w-full h-full object-cover opacity-40 scale-105 animate-pulse duration-[10000ms]">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=2000" alt="Indian Car Showroom" class="w-full h-full object-cover opacity-35 scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-apex-950 via-apex-950/70 to-transparent"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-apex-950 via-transparent to-apex-950"></div>
         </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-apex-accent/10 border border-apex-accent/30 text-apex-accent text-xs font-semibold uppercase tracking-widest mb-6 backdrop-blur-md">
-                <i class="fa-solid fa-bolt"></i> New Delhi & Gurugram Flagship Destination
+                <i class="fa-solid fa-indian-rupee-sign"></i> From Hatchbacks Under ₹5 Lakhs to Luxury Exotics
             </div>
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-5xl mx-auto leading-tight mb-6">
-                Redefining Luxury & <span class="bg-gradient-to-r from-amber-200 via-apex-accent to-yellow-500 bg-clip-text text-transparent">Performance</span> in India
+                India's Complete Automotive <span class="bg-gradient-to-r from-amber-200 via-apex-accent to-yellow-500 bg-clip-text text-transparent">Showroom Hub</span>
             </h1>
             <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-light">
-                Explore verified new arrivals and certified pre-owned exotic cars from Porsche, Mercedes-AMG, BMW M, Lamborghini, and Range Rover.
+                Explore Maruti Suzuki, Tata, Mahindra, Hyundai, Toyota, Kia, Skoda, Volkswagen, and luxury giants with transparent On-Road pricing.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="#catalog" class="w-full sm:w-auto px-8 py-4 rounded-full bg-apex-accent hover:bg-apex-accentHover text-apex-950 font-bold text-base transition-all shadow-xl shadow-apex-accent/20 flex items-center justify-center gap-3">
-                    Explore Inventory <i class="fa-solid fa-arrow-right"></i>
+                    Explore All Cars <i class="fa-solid fa-arrow-right"></i>
                 </a>
-                <a href="#configurator" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800 text-white font-semibold text-base border border-slate-700 transition-all backdrop-blur-md flex items-center justify-center gap-3">
-                    <i class="fa-solid fa-sliders text-apex-accent"></i> 3D Custom Configurator
+                <a href="#budget-section" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800 text-white font-semibold text-base border border-slate-700 transition-all backdrop-blur-md flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-wallet text-apex-accent"></i> Budget Friendly (Under ₹10L)
                 </a>
             </div>
 
             <!-- Quick Stats -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-20 pt-10 border-t border-slate-800/80">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16 pt-10 border-t border-slate-800/80">
                 <div class="bg-slate-900/40 backdrop-blur-md p-4 rounded-2xl border border-slate-800">
-                    <div class="text-3xl font-extrabold text-white mb-1">₹50L+</div>
-                    <div class="text-xs text-slate-400 uppercase tracking-wider">Starting Range</div>
-                </div>
-                <div class="bg-slate-900/40 backdrop-blur-md p-4 rounded-2xl border border-slate-800">
-                    <div class="text-3xl font-extrabold text-white mb-1">100%</div>
-                    <div class="text-xs text-slate-400 uppercase tracking-wider">Verified Certified Cars</div>
-                </div>
-                <div class="bg-slate-900/40 backdrop-blur-md p-4 rounded-2xl border border-slate-800">
-                    <div class="text-3xl font-extrabold text-white mb-1">24/7</div>
-                    <div class="text-xs text-slate-400 uppercase tracking-wider">VIP Concierge Support</div>
+                    <div class="text-3xl font-extrabold text-white mb-1">₹4.99L+</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider">Starting Price</div>
                 </div>
                 <div class="bg-slate-900/40 backdrop-blur-md p-4 rounded-2xl border border-slate-800">
                     <div class="text-3xl font-extrabold text-white mb-1">15+</div>
-                    <div class="text-xs text-slate-400 uppercase tracking-wider">Luxury Brands</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider">Major Indian Brands</div>
                 </div>
+                <div class="bg-slate-900/40 backdrop-blur-md p-4 rounded-2xl border border-slate-800">
+                    <div class="text-3xl font-extrabold text-white mb-1">100%</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider">Verified On-Road Pricing</div>
+                </div>
+                <div class="bg-slate-900/40 backdrop-blur-md p-4 rounded-2xl border border-slate-800">
+                    <div class="text-3xl font-extrabold text-white mb-1">NCR</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider">Gurugram & Delhi Delivery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK BUDGET FILTERS -->
+    <section id="budget-section" class="py-16 bg-apex-900/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs uppercase tracking-widest text-apex-accent font-bold mb-2 block">Pocket Friendly Choices</span>
+                <h2 class="text-3xl font-extrabold text-white mb-2">Shop by Budget Range</h2>
+                <p class="text-slate-400 text-sm">Quickly find the best cars tailored for Indian families and budget-conscious buyers.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <button onclick="filterByBudgetQuick(0, 600000)" class="bg-slate-900 hover:bg-slate-800 p-6 rounded-2xl border border-slate-800 hover:border-apex-accent text-center transition-all group">
+                    <div class="text-apex-accent text-2xl font-black mb-1 group-hover:scale-110 transition-transform">Under ₹6 Lakhs</div>
+                    <div class="text-xs text-slate-400">Alto K10, Kwid, Celerio</div>
+                </button>
+                <button onclick="filterByBudgetQuick(600000, 1000000)" class="bg-slate-900 hover:bg-slate-800 p-6 rounded-2xl border border-slate-800 hover:border-apex-accent text-center transition-all group">
+                    <div class="text-apex-accent text-2xl font-black mb-1 group-hover:scale-110 transition-transform">₹6L - ₹10 Lakhs</div>
+                    <div class="text-xs text-slate-400">Swift, WagonR, Tiago, Punch</div>
+                </button>
+                <button onclick="filterByBudgetQuick(1000000, 2000000)" class="bg-slate-900 hover:bg-slate-800 p-6 rounded-2xl border border-slate-800 hover:border-apex-accent text-center transition-all group">
+                    <div class="text-apex-accent text-2xl font-black mb-1 group-hover:scale-110 transition-transform">₹10L - ₹20 Lakhs</div>
+                    <div class="text-xs text-slate-400">Creta, Nexon, Brezza, Seltos</div>
+                </button>
+                <button onclick="filterByBudgetQuick(2000000, 100000000)" class="bg-slate-900 hover:bg-slate-800 p-6 rounded-2xl border border-slate-800 hover:border-apex-accent text-center transition-all group">
+                    <div class="text-apex-accent text-2xl font-black mb-1 group-hover:scale-110 transition-transform">Luxury (₹20L+)</div>
+                    <div class="text-xs text-slate-400">Fortuner, BMW, Audi, Mercedes</div>
+                </button>
             </div>
         </div>
     </section>
@@ -167,56 +178,83 @@
     <section id="catalog" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
             <div>
-                <span class="text-xs uppercase tracking-widest text-apex-accent font-bold mb-2 block">Exclusive Inventory</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">The Apex Showroom Collection</h2>
+                <span class="text-xs uppercase tracking-widest text-apex-accent font-bold mb-2 block">Mega Inventory</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">All Brands & Models Showroom</h2>
             </div>
         </div>
 
         <!-- Advanced Filter Toolbar -->
-        <div class="bg-slate-900/80 p-6 rounded-3xl border border-slate-800 mb-10 shadow-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <!-- Condition (New / Used) -->
-            <div>
-                <label class="text-xs uppercase tracking-widest text-slate-400 font-semibold block mb-2">Condition</label>
-                <select id="filter-condition" onchange="applyFilters()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-apex-accent">
-                    <option value="All">All Conditions</option>
-                    <option value="New">Brand New</option>
-                    <option value="Used">Certified Pre-Owned</option>
-                </select>
-            </div>
-
+        <div class="bg-slate-900/80 p-6 rounded-3xl border border-slate-800 mb-10 shadow-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             <!-- Brand / Make -->
             <div>
                 <label class="text-xs uppercase tracking-widest text-slate-400 font-semibold block mb-2">Brand / Make</label>
                 <select id="filter-brand" onchange="applyFilters()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-apex-accent">
-                    <option value="All">All Brands</option>
-                    <option value="Porsche">Porsche</option>
-                    <option value="Mercedes-AMG">Mercedes-AMG</option>
-                    <option value="BMW M">BMW M Series</option>
-                    <option value="Lamborghini">Lamborghini</option>
-                    <option value="Land Rover">Land Rover</option>
+                    <option value="All">All Brands (15+)</option>
+                    <option value="Maruti Suzuki">Maruti Suzuki</option>
+                    <option value="Tata">Tata Motors</option>
+                    <option value="Mahindra">Mahindra</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Kia">Kia India</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Skoda">Skoda</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="MG">MG Motor</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Citroen">Citroen</option>
+                    <option value="BMW">BMW M Series</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BYD">BYD EV</option>
                 </select>
             </div>
 
-            <!-- Price Range -->
+            <!-- Body Type -->
             <div>
-                <label class="text-xs uppercase tracking-widest text-slate-400 font-semibold block mb-2">Max Price</label>
-                <select id="filter-price" onchange="applyFilters()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-apex-accent">
-                    <option value="9999">Any Budget</option>
-                    <option value="1">Under ₹1 Crore</option>
-                    <option value="2">Under ₹2 Crores</option>
-                    <option value="3">Under ₹3 Crores</option>
+                <label class="text-xs uppercase tracking-widest text-slate-400 font-semibold block mb-2">Body Type</label>
+                <select id="filter-body" onchange="applyFilters()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-apex-accent">
+                    <option value="All">All Body Types</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Compact SUV">Compact SUV</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">Full SUV</option>
+                    <option value="Sports">Sports Coupe</option>
                 </select>
             </div>
 
             <!-- Fuel Type -->
             <div>
-                <label class="text-xs uppercase tracking-widest text-slate-400 font-semibold block mb-2">Fuel Type</label>
+                <label class="text-xs uppercase tracking-widest text-slate-400 font-semibold block mb-2">Fuel / Energy</label>
                 <select id="filter-fuel" onchange="applyFilters()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-apex-accent">
                     <option value="All">All Fuel Types</option>
                     <option value="Petrol">Petrol</option>
-                    <option value="Electric">Electric (EV)</option>
-                    <option value="Hybrid">Plug-in Hybrid</option>
                     <option value="Diesel">Diesel</option>
+                    <option value="CNG">CNG</option>
+                    <option value="Electric">Electric (EV)</option>
+                    <option value="Hybrid">Hybrid</option>
+                </select>
+            </div>
+
+            <!-- Max Price -->
+            <div>
+                <label class="text-xs uppercase tracking-widest text-slate-400 font-semibold block mb-2">Max Budget</label>
+                <select id="filter-price" onchange="applyFilters()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-apex-accent">
+                    <option value="999900000">Any Budget</option>
+                    <option value="600000">Under ₹6 Lakhs</option>
+                    <option value="1000000">Under ₹10 Lakhs</option>
+                    <option value="2000000">Under ₹20 Lakhs</option>
+                    <option value="5000000">Under ₹50 Lakhs</option>
+                    <option value="10000000">Under ₹1 Crore</option>
+                </select>
+            </div>
+
+            <!-- Condition -->
+            <div>
+                <label class="text-xs uppercase tracking-widest text-slate-400 font-semibold block mb-2">Condition</label>
+                <select id="filter-condition" onchange="applyFilters()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-apex-accent">
+                    <option value="All">All Conditions</option>
+                    <option value="New">Brand New</option>
+                    <option value="Certified Pre-Owned">Certified Pre-Owned</option>
                 </select>
             </div>
         </div>
@@ -224,79 +262,6 @@
         <!-- Car Cards Grid -->
         <div id="car-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Populated via JavaScript -->
-        </div>
-    </section>
-
-    <!-- 3D / COLOR CONFIGURATOR STUDIO -->
-    <section id="configurator" class="py-24 bg-gradient-to-b from-apex-950 via-apex-900 to-apex-950 border-y border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs uppercase tracking-widest text-apex-accent font-bold mb-2 block">Interactive Studio</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Tailor Your Apex Vehicle</h2>
-                <p class="text-slate-400">Select your model, customize your exterior paint finish, interior trim, and wheel styling in real-time.</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Vehicle Preview Box -->
-                <div class="lg:col-span-7 bg-slate-900/90 rounded-3xl p-6 border border-slate-800 shadow-2xl relative overflow-hidden group">
-                    <div class="absolute top-4 left-4 z-10 flex gap-2">
-                        <span id="config-badge" class="px-3 py-1 rounded-full bg-apex-accent/20 text-apex-accent text-xs font-bold border border-apex-accent/40">Brand New</span>
-                        <span id="config-model-name" class="px-3 py-1 rounded-full bg-slate-800 text-slate-200 text-xs font-semibold">Porsche 911 GT3 RS</span>
-                    </div>
-
-                    <div class="absolute top-4 right-4 z-10 flex items-center gap-2">
-                        <button onclick="rotateCarView()" class="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 backdrop-blur-md transition-all text-xs font-medium flex items-center gap-1.5">
-                            <i class="fa-solid fa-rotate text-apex-accent"></i> 360° Spin
-                        </button>
-                    </div>
-
-                    <div class="h-80 sm:h-[420px] flex items-center justify-center relative overflow-hidden rounded-2xl bg-gradient-to-b from-slate-950 to-slate-900">
-                        <div id="car-image-container" class="transition-all duration-500 transform scale-100 group-hover:scale-105">
-                            <img id="config-car-img" src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=1200" alt="Configurator Car" class="max-h-80 object-contain drop-shadow-[0_25px_25px_rgba(0,0,0,0.8)] filter transition-all duration-500">
-                        </div>
-                        <div id="floor-glow" class="absolute bottom-6 w-3/4 h-8 bg-apex-accent/20 blur-2xl rounded-full transition-all duration-500"></div>
-                    </div>
-
-                    <div class="mt-6 flex items-center justify-between border-t border-slate-800 pt-4">
-                        <div>
-                            <span class="text-xs text-slate-400 block">Estimated Configuration Price (INR)</span>
-                            <span id="config-total-price" class="text-2xl font-black text-white">₹3.50 Crores</span>
-                        </div>
-                        <button onclick="openTestDriveModalFromConfig()" class="px-6 py-3 rounded-xl bg-apex-accent hover:bg-apex-accentHover text-apex-950 font-bold text-sm transition-all shadow-lg shadow-apex-accent/20 flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check"></i> Reserve This Build
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Customization Controls -->
-                <div class="lg:col-span-5 flex flex-col gap-6">
-                    <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
-                        <label class="text-xs uppercase tracking-widest text-slate-400 font-semibold block mb-3">1. Choose Base Model</label>
-                        <div id="config-model-buttons" class="grid grid-cols-2 gap-2">
-                            <!-- Populated via JS -->
-                        </div>
-                    </div>
-
-                    <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
-                        <label class="text-xs uppercase tracking-widest text-slate-400 font-semibold block mb-3">2. Exterior Paint Finish (<span id="selected-color-name">Midnight Onyx</span>)</label>
-                        <div class="flex items-center gap-3">
-                            <button onclick="setExteriorColor('Midnight Onyx', '#1e293b', 'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=1200', 0)" class="w-10 h-10 rounded-full bg-slate-900 border-2 border-apex-accent ring-2 ring-apex-accent/50 transition-transform hover:scale-110" title="Midnight Onyx"></button>
-                            <button onclick="setExteriorColor('Alpine White', '#f8fafc', 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=1200', 150000)" class="w-10 h-10 rounded-full bg-slate-100 border-2 border-transparent hover:border-apex-accent transition-transform hover:scale-110" title="Alpine White"></button>
-                            <button onclick="setExteriorColor('Racing Rosso', '#dc2626', 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&q=80&w=1200', 250000)" class="w-10 h-10 rounded-full bg-red-600 border-2 border-transparent hover:border-apex-accent transition-transform hover:scale-110" title="Racing Rosso"></button>
-                            <button onclick="setExteriorColor('Apex Gold', '#d4af37', 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=1200', 350000)" class="w-10 h-10 rounded-full bg-amber-500 border-2 border-transparent hover:border-apex-accent transition-transform hover:scale-110" title="Apex Gold"></button>
-                        </div>
-                    </div>
-
-                    <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
-                        <label class="text-xs uppercase tracking-widest text-slate-400 font-semibold block mb-3">3. Interior Trim & Upholstery</label>
-                        <div class="grid grid-cols-3 gap-3">
-                            <button onclick="setInteriorTrim('Carbon & Alcantara', 0)" class="px-3 py-2 rounded-xl bg-slate-800 border border-apex-accent text-xs font-semibold text-white">Carbon / Alcantara</button>
-                            <button onclick="setInteriorTrim('Executive White Leather', 180000)" class="px-3 py-2 rounded-xl bg-slate-800/60 border border-slate-700 text-xs font-medium text-slate-300 hover:text-white">White Leather</button>
-                            <button onclick="setInteriorTrim('Cognac Brown Nappa', 220000)" class="px-3 py-2 rounded-xl bg-slate-800/60 border border-slate-700 text-xs font-medium text-slate-300 hover:text-white">Cognac Nappa</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -308,7 +273,7 @@
             <div class="text-center mb-10">
                 <span class="text-xs uppercase tracking-widest text-apex-accent font-bold mb-2 block">Transparent Financing</span>
                 <h2 class="text-3xl font-extrabold text-white mb-2">Car Loan EMI Calculator (INR)</h2>
-                <p class="text-slate-400 text-sm">Customize your down payment, loan tenure, and interest rate for instant monthly estimates.</p>
+                <p class="text-slate-400 text-sm">Calculate affordable monthly EMIs for budget cars or luxury models in seconds.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -316,17 +281,17 @@
                     <div>
                         <div class="flex justify-between text-sm mb-2">
                             <span class="text-slate-300 font-medium">Vehicle Price</span>
-                            <span id="calc-price-val" class="text-apex-accent font-bold">₹1,50,00,000</span>
+                            <span id="calc-price-val" class="text-apex-accent font-bold">₹8,50,000</span>
                         </div>
-                        <input type="range" id="calc-price" min="5000000" max="50000000" step="500000" value="15000000" oninput="calculateEMI()" class="w-full accent-apex-accent cursor-pointer">
+                        <input type="range" id="calc-price" min="450000" max="5000000" step="50000" value="850000" oninput="calculateEMI()" class="w-full accent-apex-accent cursor-pointer">
                     </div>
 
                     <div>
                         <div class="flex justify-between text-sm mb-2">
                             <span class="text-slate-300 font-medium">Down Payment</span>
-                            <span id="calc-down-val" class="text-apex-accent font-bold">₹30,00,000</span>
+                            <span id="calc-down-val" class="text-apex-accent font-bold">₹1,50,000</span>
                         </div>
-                        <input type="range" id="calc-down" min="1000000" max="30000000" step="500000" value="3000000" oninput="calculateEMI()" class="w-full accent-apex-accent cursor-pointer">
+                        <input type="range" id="calc-down" min="50000" max="2000000" step="25000" value="150000" oninput="calculateEMI()" class="w-full accent-apex-accent cursor-pointer">
                     </div>
 
                     <div>
@@ -342,33 +307,33 @@
                             <span class="text-slate-300 font-medium">Interest Rate (APR)</span>
                             <span id="calc-rate-val" class="text-apex-accent font-bold">8.5%</span>
                         </div>
-                        <input type="range" id="calc-rate" min="6.0" max="15.0" step="0.5" value="8.5" oninput="calculateEMI()" class="w-full accent-apex-accent cursor-pointer">
+                        <input type="range" id="calc-rate" min="7.0" max="15.0" step="0.5" value="8.5" oninput="calculateEMI()" class="w-full accent-apex-accent cursor-pointer">
                     </div>
                 </div>
 
                 <div class="bg-apex-950/90 p-8 rounded-2xl border border-slate-800 flex flex-col justify-between text-center md:text-left relative">
                     <div>
                         <span class="text-xs uppercase tracking-widest text-slate-400 block mb-1">Estimated Monthly EMI</span>
-                        <div id="monthly-payment" class="text-3xl sm:text-4xl font-black text-apex-accent mb-6">₹2,46,500<span class="text-sm font-normal text-slate-400">/mo</span></div>
+                        <div id="monthly-payment" class="text-3xl sm:text-4xl font-black text-apex-accent mb-6">₹14,230<span class="text-sm font-normal text-slate-400">/mo</span></div>
                         
                         <div class="space-y-3 text-sm border-t border-slate-800 pt-6">
                             <div class="flex justify-between">
                                 <span class="text-slate-400">Loan Amount:</span>
-                                <span id="financed-amount" class="text-white font-semibold">₹1,20,00,000</span>
+                                <span id="financed-amount" class="text-white font-semibold">₹7,00,000</span>
                             </div>
                             <div class="flex justify-between">
                                 <span class="text-slate-400">Total Interest:</span>
-                                <span id="total-interest" class="text-white font-semibold">₹27,90,000</span>
+                                <span id="total-interest" class="text-white font-semibold">₹1,53,800</span>
                             </div>
                             <div class="flex justify-between">
                                 <span class="text-slate-400">Total Payable:</span>
-                                <span id="total-cost" class="text-white font-semibold">₹1,77,90,000</span>
+                                <span id="total-cost" class="text-white font-semibold">₹10,03,800</span>
                             </div>
                         </div>
                     </div>
 
                     <button onclick="openTestDriveModal()" class="mt-8 w-full py-3.5 rounded-xl bg-apex-accent hover:bg-apex-accentHover text-apex-950 font-bold text-sm transition-all shadow-lg shadow-apex-accent/20 flex items-center justify-center gap-2">
-                        Apply for Loan <i class="fa-solid fa-arrow-right"></i>
+                        Apply for Car Loan <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
             </div>
@@ -380,8 +345,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-xs uppercase tracking-widest text-apex-accent font-bold mb-2 block">Side-by-Side Analysis</span>
-                <h2 class="text-3xl font-extrabold text-white mb-3">Compare Apex Vehicles</h2>
-                <p class="text-slate-400 text-sm">Select up to 3 cars to compare engine CC, mileage, horsepower, and Indian pricing.</p>
+                <h2 class="text-3xl font-extrabold text-white mb-3">Compare Same Price Range Cars</h2>
+                <p class="text-slate-400 text-sm">Select up to 3 cars to compare engine specs, mileage, safety ratings, and Indian On-Road prices.</p>
             </div>
 
             <div id="compare-matrix" class="overflow-x-auto pb-6">
@@ -395,21 +360,21 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
                 <span class="text-xs uppercase tracking-widest text-apex-accent font-bold mb-2 block">About Apex Motors India</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">India's Premier Destination for Exotic & Luxury Automobiles</h2>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">India's Comprehensive Automobile Showroom Hub</h2>
                 <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                    Founded with a passion for automotive excellence, Apex Motors India operates state-of-the-art flagship showrooms in New Delhi and Gurugram. We cater to connoisseurs seeking uncompromised luxury, peerless performance, and white-glove customer service.
+                    Apex Motors India brings together every major car manufacturer under one roof. Whether you are looking for an affordable fuel-efficient hatchback under ₹6 Lakhs or a ultra-luxury performance SUV, we provide transparent on-road pricing with zero hidden charges.
                 </p>
                 <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                    Every vehicle in our inventory undergoes a rigorous 175-point mechanical inspection by certified master technicians, complete with verified service histories and immaculate documentation.
+                    With our flagship galleries in Gurugram and New Delhi, we offer seamless doorstep test drives, quick car loans with leading Indian banks, and guaranteed certified pre-owned warranty.
                 </p>
                 <div class="grid grid-cols-2 gap-4">
                     <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800">
-                        <div class="text-apex-accent font-bold text-lg mb-1"><i class="fa-solid fa-shield-halved"></i> 100% Verified</div>
-                        <p class="text-xs text-slate-400">Clear titles, verified insurance, and zero-accident guarantee.</p>
+                        <div class="text-apex-accent font-bold text-lg mb-1"><i class="fa-solid fa-shield-halved"></i> 100% Transparent</div>
+                        <p class="text-xs text-slate-400">Accurate RTO, insurance, and TCS breakdown for all states.</p>
                     </div>
                     <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800">
-                        <div class="text-apex-accent font-bold text-lg mb-1"><i class="fa-solid fa-truck-fast"></i> Pan-India Delivery</div>
-                        <p class="text-xs text-slate-400">Secure enclosed flatbed transit to your doorstep anywhere in India.</p>
+                        <div class="text-apex-accent font-bold text-lg mb-1"><i class="fa-solid fa-handshake"></i> Easy Finance</div>
+                        <p class="text-xs text-slate-400">Instant loan approvals with SBI, HDFC, ICICI, and Axis Bank.</p>
                     </div>
                 </div>
             </div>
@@ -425,11 +390,10 @@
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-xs uppercase tracking-widest text-apex-accent font-bold mb-2 block">Get in Touch</span>
                 <h2 class="text-3xl font-extrabold text-white mb-3">Visit Our Flagship Showroom</h2>
-                <p class="text-slate-400 text-sm">Drop by our Gurugram or New Delhi galleries or reach our VIP concierge team directly.</p>
+                <p class="text-slate-400 text-sm">Drop by our Gurugram gallery or reach our sales advisors on WhatsApp 24/7.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Contact Info Cards -->
                 <div class="space-y-6">
                     <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 flex items-start gap-4 shadow-xl">
                         <div class="w-12 h-12 rounded-xl bg-apex-accent/10 border border-apex-accent/30 text-apex-accent flex items-center justify-center shrink-0">
@@ -437,7 +401,7 @@
                         </div>
                         <div>
                             <h4 class="text-white font-bold text-base mb-1">Gurugram Flagship Gallery</h4>
-                            <p class="text-xs text-slate-300 leading-relaxed">Golf Course Road, Sector 54, Gurugram, Haryana 122002, India</p>
+                            <p class="text-xs text-slate-300 leading-relaxed">Golf Course Extension Road, Sector 65, Gurugram, Haryana 102001, India</p>
                         </div>
                     </div>
 
@@ -446,9 +410,9 @@
                             <i class="fa-solid fa-phone text-xl"></i>
                         </div>
                         <div>
-                            <h4 class="text-white font-bold text-base mb-1">Direct Phone Concierge</h4>
+                            <h4 class="text-white font-bold text-base mb-1">Direct Phone & WhatsApp</h4>
                             <p class="text-xs text-slate-300 mb-1">+91 (124) 456-7890 / +91 98765 43210</p>
-                            <span class="text-[10px] text-emerald-400 font-semibold"><i class="fa-brands fa-whatsapp"></i> WhatsApp Available 24/7</span>
+                            <span class="text-[10px] text-emerald-400 font-semibold"><i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Reply Active</span>
                         </div>
                     </div>
 
@@ -458,12 +422,11 @@
                         </div>
                         <div>
                             <h4 class="text-white font-bold text-base mb-1">Electronic Enquiries</h4>
-                            <p class="text-xs text-slate-300">concierge@apexmotorsindia.com</p>
+                            <p class="text-xs text-slate-300">sales@apexmotorsindia.com</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Google Map Embed Placeholder -->
                 <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl h-[380px] relative">
                     <iframe title="Apex Motors Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.495066898956!2d77.098!3d28.4595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI3JzM0LjIiTiA3N8KwMDUnNTIuOCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0; filter: contrast(120%) invert(90%) hue-rotate(180deg);" allowfullscreen="" loading="lazy"></iframe>
                 </div>
@@ -478,36 +441,36 @@
                 <div class="space-y-4">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-8 rounded-lg bg-apex-accent flex items-center justify-center">
-                            <i class="fa-solid fa-crown text-apex-950"></i>
+                            <i class="fa-solid fa-car text-apex-950"></i>
                         </div>
                         <span class="text-lg font-extrabold text-white tracking-wider">APEX MOTORS INDIA</span>
                     </div>
                     <p class="text-xs leading-relaxed text-slate-400">
-                        India's pinnacle luxury and performance car showroom, bringing legendary automotive craftsmanship to New Delhi and Gurugram.
+                        India's mega showroom featuring budget hatchbacks, family SUVs, electric vehicles, and luxury exotics.
                     </p>
                 </div>
                 <div>
                     <h4 class="text-white text-sm font-semibold mb-4 uppercase tracking-wider">Showroom</h4>
                     <ul class="space-y-2.5 text-xs">
-                        <li><a href="#catalog" class="hover:text-apex-accent transition-colors">New Arrivals</a></li>
-                        <li><a href="#catalog" class="hover:text-apex-accent transition-colors">Certified Pre-Owned</a></li>
-                        <li><a href="#configurator" class="hover:text-apex-accent transition-colors">3D Customizer</a></li>
+                        <li><a href="#catalog" class="hover:text-apex-accent transition-colors">Budget Cars (Under ₹10L)</a></li>
+                        <li><a href="#catalog" class="hover:text-apex-accent transition-colors">Compact SUVs & Sedans</a></li>
+                        <li><a href="#catalog" class="hover:text-apex-accent transition-colors">Electric & Hybrid Cars</a></li>
                         <li><a href="#calculator" class="hover:text-apex-accent transition-colors">EMI Loan Calculator</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-white text-sm font-semibold mb-4 uppercase tracking-wider">Services</h4>
+                    <h4 class="text-white text-sm font-semibold mb-4 uppercase tracking-wider">Top Indian Brands</h4>
                     <ul class="space-y-2.5 text-xs">
-                        <li><a href="#" onclick="openTestDriveModal()" class="hover:text-apex-accent transition-colors">Book a Test Drive</a></li>
-                        <li><a href="#compare" class="hover:text-apex-accent transition-colors">Vehicle Comparison</a></li>
-                        <li><a href="#about" class="hover:text-apex-accent transition-colors">About Showroom</a></li>
-                        <li><a href="#contact" class="hover:text-apex-accent transition-colors">Gurugram & Delhi Gallery</a></li>
+                        <li><a href="#catalog" class="hover:text-apex-accent transition-colors">Maruti Suzuki</a></li>
+                        <li><a href="#catalog" class="hover:text-apex-accent transition-colors">Tata Motors</a></li>
+                        <li><a href="#catalog" class="hover:text-apex-accent transition-colors">Mahindra & Mahindra</a></li>
+                        <li><a href="#catalog" class="hover:text-apex-accent transition-colors">Hyundai & Kia India</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-white text-sm font-semibold mb-4 uppercase tracking-wider">VIP Newsletter</h4>
-                    <p class="text-xs mb-3 text-slate-400">Subscribe for private vehicle launches and invite-only track days.</p>
-                    <form onsubmit="event.preventDefault(); showToast('Subscribed successfully to Apex VIP club!');" class="flex gap-2">
+                    <p class="text-xs mb-3 text-slate-400">Subscribe for price drop alerts and festive offers in India.</p>
+                    <form onsubmit="event.preventDefault(); showToast('Subscribed successfully to Apex newsletter!');" class="flex gap-2">
                         <input type="email" placeholder="Enter your email" required class="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-apex-accent flex-1">
                         <button type="submit" class="px-4 py-2 bg-apex-accent text-apex-950 font-bold rounded-xl text-xs hover:bg-apex-accentHover transition-colors">Join</button>
                     </form>
@@ -518,7 +481,7 @@
                 <div class="flex gap-6 mt-4 sm:mt-0">
                     <a href="#" class="hover:text-slate-400">Privacy Policy</a>
                     <a href="#" class="hover:text-slate-400">Terms of Service</a>
-                    <a href="#" class="hover:text-slate-400">RTO & Registration Guide</a>
+                    <a href="#" class="hover:text-slate-400">RTO Registration Guide</a>
                 </div>
             </div>
         </div>
@@ -546,7 +509,7 @@
             <div class="mb-6">
                 <span class="text-xs uppercase tracking-widest text-apex-accent font-bold mb-1 block">VIP Experience</span>
                 <h3 class="text-2xl font-extrabold text-white">Book a Test Drive</h3>
-                <p class="text-xs text-slate-400 mt-1">Experience legendary luxury at our Gurugram gallery or request doorstep test drive in Delhi NCR.</p>
+                <p class="text-xs text-slate-400 mt-1">Visit our Gurugram gallery or request a doorstep test drive anywhere in Delhi NCR.</p>
             </div>
 
             <form onsubmit="handleTestDriveSubmit(event)" class="space-y-4">
@@ -588,126 +551,415 @@
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
-        // Indian Luxury Car Inventory Data (Prices in INR)
+        // Comprehensive Inventory including budget-friendly cars, Indian brands, and luxury exotics
         const cars = [
+            // --- BUDGET FRIENDLY (UNDER 10 LAKHS) ---
             {
                 id: 1,
+                name: "Maruti Alto K10 VXi+",
+                brand: "Maruti Suzuki",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "Hatchback",
+                exPrice: 499000,
+                exPriceDisplay: "₹4.99 Lakhs",
+                onRoadPrice: 562000,
+                onRoadPriceDisplay: "₹5.62 Lakhs",
+                hp: "66 HP",
+                cc: "998 cc",
+                mileage: "24.9 kmpl",
+                transmission: "AGS Automatic",
+                safety: "2-Star G-NCAP",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=1200",
+                badge: "Best Budget",
+                desc: "India's favorite budget hatchback featuring SmartPlay Studio touchscreen and high fuel efficiency."
+            },
+            {
+                id: 2,
+                name: "Renault Kwid RXL (O)",
+                brand: "Renault",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "Hatchback",
+                exPrice: 520000,
+                exPriceDisplay: "₹5.20 Lakhs",
+                onRoadPrice: 585000,
+                onRoadPriceDisplay: "₹5.85 Lakhs",
+                hp: "67 HP",
+                cc: "999 cc",
+                mileage: "22.3 kmpl",
+                transmission: "5-Speed Manual",
+                safety: "1-Star G-NCAP",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=1200",
+                badge: "SUV Stance",
+                desc: "SUV-inspired design with robust ground clearance, digital instrument cluster, and stylish aesthetics."
+            },
+            {
+                id: 3,
+                name: "Maruti WagonR VXi",
+                brand: "Maruti Suzuki",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "Hatchback",
+                exPrice: 599000,
+                exPriceDisplay: "₹5.99 Lakhs",
+                onRoadPrice: 672000,
+                onRoadPriceDisplay: "₹6.72 Lakhs",
+                hp: "66 HP",
+                cc: "998 cc",
+                mileage: "24.35 kmpl",
+                transmission: "5-Speed Manual",
+                safety: "1-Star G-NCAP",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=1200",
+                badge: "Tallboy Family",
+                desc: "The legendary tallboy hatchback with expansive headroom, comfortable ingress/egress, and dual-tone cabin."
+            },
+            {
+                id: 4,
+                name: "Tata Tiago XE",
+                brand: "Tata",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "Hatchback",
+                exPrice: 565000,
+                exPriceDisplay: "₹5.65 Lakhs",
+                onRoadPrice: 634000,
+                onRoadPriceDisplay: "₹6.34 Lakhs",
+                hp: "85 HP",
+                cc: "1,199 cc",
+                mileage: "20.09 kmpl",
+                transmission: "5-Speed Manual",
+                safety: "4-Star G-NCAP",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1200",
+                badge: "4-Star Safety",
+                desc: "Solid build quality with 4-star Global NCAP safety rating, Harman infotainment, and energetic performance."
+            },
+            {
+                id: 5,
+                name: "Maruti Swift VXi",
+                brand: "Maruti Suzuki",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "Hatchback",
+                exPrice: 729000,
+                exPriceDisplay: "₹7.29 Lakhs",
+                onRoadPrice: 818000,
+                onRoadPriceDisplay: "₹8.18 Lakhs",
+                hp: "82 HP",
+                cc: "1,197 cc",
+                mileage: "24.8 kmpl",
+                transmission: "5-Speed Manual",
+                safety: "Safe Build",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=1200",
+                badge: "Top Seller",
+                desc: "All-new sporty hatchback equipped with Z-series 3-cylinder engine, wireless charger, and connected tech."
+            },
+            {
+                id: 6,
+                name: "Tata Punch Pure",
+                brand: "Tata",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "Compact SUV",
+                exPrice: 613000,
+                exPriceDisplay: "₹6.13 Lakhs",
+                onRoadPrice: 689000,
+                onRoadPriceDisplay: "₹6.89 Lakhs",
+                hp: "87 HP",
+                cc: "1,199 cc",
+                mileage: "20.09 kmpl",
+                transmission: "5-Speed Manual",
+                safety: "5-Star G-NCAP",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=1200",
+                badge: "5-Star Safety",
+                desc: "India's sub-compact micro SUV with 90-degree opening doors, high ground clearance, and 5-star safety."
+            },
+            {
+                id: 7,
+                name: "Hyundai Grand i10 Nios Era",
+                brand: "Hyundai",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "Hatchback",
+                exPrice: 592000,
+                exPriceDisplay: "₹5.92 Lakhs",
+                onRoadPrice: 665000,
+                onRoadPriceDisplay: "₹6.65 Lakhs",
+                hp: "82 HP",
+                cc: "1,197 cc",
+                mileage: "20.7 kmpl",
+                transmission: "5-Speed Manual",
+                safety: "Standard Safety",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=1200",
+                badge: "Feature Packed",
+                desc: "Premium hatch with plush interiors, rear AC vents, footwell lighting, and silky smooth refinement."
+            },
+            {
+                id: 8,
+                name: "Citroen C3 Live",
+                brand: "Citroen",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "Compact SUV",
+                exPrice: 616000,
+                exPriceDisplay: "₹6.16 Lakhs",
+                onRoadPrice: 692000,
+                onRoadPriceDisplay: "₹6.92 Lakhs",
+                hp: "81 HP",
+                cc: "1,199 cc",
+                mileage: "19.3 kmpl",
+                transmission: "5-Speed Manual",
+                safety: "Advanced Comfort",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=1200",
+                badge: "French Comfort",
+                desc: "Renowned ride comfort suspension tuned specifically for Indian road conditions with vibrant dual-tone styling."
+            },
+
+            // --- MID-RANGE & POPULAR SUVs / SEDANS (10L - 25L) ---
+            {
+                id: 9,
+                name: "Hyundai Creta SX (O)",
+                brand: "Hyundai",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "Compact SUV",
+                exPrice: 1748000,
+                exPriceDisplay: "₹17.48 Lakhs",
+                onRoadPrice: 2040000,
+                onRoadPriceDisplay: "₹20.40 Lakhs",
+                hp: "158 HP",
+                cc: "1,482 cc",
+                mileage: "17.7 kmpl",
+                transmission: "7-Speed DCT Auto",
+                safety: "Level 2 ADAS",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1200",
+                badge: "Bestseller SUV",
+                desc: "The undisputed king of mid-size SUVs with panoramic sunroof, dual displays, and advanced safety."
+            },
+            {
+                id: 10,
+                name: "Mahindra Thar Roxx 4x4",
+                brand: "Mahindra",
+                condition: "New",
+                fuel: "Diesel",
+                bodyType: "SUV",
+                exPrice: 2250000,
+                exPriceDisplay: "₹22.50 Lakhs",
+                onRoadPrice: 2640000,
+                onRoadPriceDisplay: "₹26.40 Lakhs",
+                hp: "172 HP",
+                cc: "2,184 cc",
+                mileage: "15.2 kmpl",
+                transmission: "6-Speed Automatic",
+                safety: "5-Star G-NCAP",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1200",
+                badge: "Top Rated",
+                desc: "Rugged 5-door off-roader with white leatherette upholstery, panoramic sunroof, and crawl cruise control."
+            },
+            {
+                id: 11,
+                name: "Tata Safari Accomplished Plus",
+                brand: "Tata",
+                condition: "New",
+                fuel: "Diesel",
+                bodyType: "SUV",
+                exPrice: 2730000,
+                exPriceDisplay: "₹27.30 Lakhs",
+                onRoadPrice: 3190000,
+                onRoadPriceDisplay: "₹31.90 Lakhs",
+                hp: "167 HP",
+                cc: "1,956 cc",
+                mileage: "16.3 kmpl",
+                transmission: "6-Speed Automatic",
+                safety: "5-Star G-NCAP",
+                seating: "6/7 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=1200",
+                badge: "5-Star Safety",
+                desc: "Flagship Indian SUV featuring ventilated captain chairs, boss mode, and ADAS suite."
+            },
+            {
+                id: 12,
+                name: "Kia Seltos GTX+ Diesel",
+                brand: "Kia",
+                condition: "New",
+                fuel: "Diesel",
+                bodyType: "Compact SUV",
+                exPrice: 1990000,
+                exPriceDisplay: "₹19.90 Lakhs",
+                onRoadPrice: 2320000,
+                onRoadPriceDisplay: "₹23.20 Lakhs",
+                hp: "114 HP",
+                cc: "1,493 cc",
+                mileage: "20.7 kmpl",
+                transmission: "6-Speed AT",
+                safety: "Advanced ADAS",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=1200",
+                badge: "Tech Loaded",
+                desc: "Futuristic styling with dual panoramic curved displays, HUD, and heads-turning matte finish option."
+            },
+            {
+                id: 13,
+                name: "Toyota Innova Hycross ZX(O) Hybrid",
+                brand: "Toyota",
+                condition: "New",
+                fuel: "Hybrid",
+                bodyType: "SUV",
+                exPrice: 3098000,
+                exPriceDisplay: "₹30.98 Lakhs",
+                onRoadPrice: 3620000,
+                onRoadPriceDisplay: "₹36.20 Lakhs",
+                hp: "183 HP",
+                cc: "1,987 cc",
+                mileage: "23.24 kmpl",
+                transmission: "e-CVT Auto",
+                safety: "Toyota Safety Sense",
+                seating: "7 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1520031441872-265e4ff70366?auto=format&fit=crop&q=80&w=1200",
+                badge: "King of Comfort",
+                desc: "Self-charging strong hybrid MPV with ottoman second-row seats and unmatched family mileage."
+            },
+
+            // --- LUXURY & EXOTICS (25L+) ---
+            {
+                id: 14,
+                name: "Toyota Fortuner Legender 4x4",
+                brand: "Toyota",
+                condition: "New",
+                fuel: "Diesel",
+                bodyType: "SUV",
+                exPrice: 4764000,
+                exPriceDisplay: "₹47.64 Lakhs",
+                onRoadPrice: 5620000,
+                onRoadPriceDisplay: "₹56.20 Lakhs",
+                hp: "201 HP",
+                cc: "2,755 cc",
+                mileage: "14.2 kmpl",
+                transmission: "6-Speed Automatic",
+                safety: "5-Star ASEAN NCAP",
+                seating: "7 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1200",
+                badge: "Highway Ruler",
+                desc: "The supreme full-size SUV in India with aggressive LED quad headlamps and indestructible 4x4 capability."
+            },
+            {
+                id: 15,
+                name: "BMW M340i xDrive",
+                brand: "BMW",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "Sedan",
+                exPrice: 7490000,
+                exPriceDisplay: "₹74.90 Lakhs",
+                onRoadPrice: 8850000,
+                onRoadPriceDisplay: "₹88.50 Lakhs",
+                hp: "374 HP",
+                cc: "2,998 cc",
+                mileage: "13.0 kmpl",
+                transmission: "8-Speed Steptronic",
+                safety: "5-Star Euro NCAP",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=1200",
+                badge: "Performance Sedan",
+                desc: "Inline-6 sports sedan assembled in Chennai, delivering scorching acceleration and everyday luxury."
+            },
+            {
+                id: 16,
+                name: "Mercedes-Benz GLC 300 4MATIC",
+                brand: "Mercedes-Benz",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "SUV",
+                exPrice: 7590000,
+                exPriceDisplay: "₹75.90 Lakhs",
+                onRoadPrice: 8920000,
+                onRoadPriceDisplay: "₹89.20 Lakhs",
+                hp: "258 HP",
+                cc: "1,999 cc",
+                mileage: "14.7 kmpl",
+                transmission: "9G-TRONIC Auto",
+                safety: "5-Star Euro NCAP",
+                seating: "5 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1200",
+                badge: "Luxury Favorite",
+                desc: "Luxurious mid-size SUV featuring vertical MBUX touchscreen, 48V mild hybrid, and Burmester 3D sound."
+            },
+            {
+                id: 17,
+                name: "Audi Q7 55 TFSI",
+                brand: "Audi",
+                condition: "New",
+                fuel: "Petrol",
+                bodyType: "SUV",
+                exPrice: 9080000,
+                exPriceDisplay: "₹90.80 Lakhs",
+                onRoadPrice: 10650000,
+                onRoadPriceDisplay: "₹1.06 Crores",
+                hp: "340 HP",
+                cc: "2,995 cc",
+                mileage: "11.2 kmpl",
+                transmission: "8-Speed Tiptronic",
+                safety: "5-Star Euro NCAP",
+                seating: "7 Seater",
+                year: 2026,
+                img: "https://images.unsplash.com/photo-1520031441872-265e4ff70366?auto=format&fit=crop&q=80&w=1200",
+                badge: "Flagship Quattro",
+                desc: "Spacious 7-seater luxury Quattro SUV with adaptive air suspension and matrix LED lighting."
+            },
+            {
+                id: 18,
                 name: "Porsche 911 GT3 RS",
                 brand: "Porsche",
                 condition: "New",
                 fuel: "Petrol",
-                price: 35000000, // 3.50 Crores
-                priceDisplay: "₹3.50 Crores",
+                bodyType: "Sports",
+                exPrice: 35000000,
+                exPriceDisplay: "₹3.50 Crores",
+                onRoadPrice: 41200000,
+                onRoadPriceDisplay: "₹4.12 Crores",
                 hp: "518 HP",
                 cc: "3,996 cc",
                 mileage: "8.2 kmpl",
                 transmission: "7-Speed PDK",
+                safety: "Track Certified",
+                seating: "2 Seater",
                 year: 2026,
                 img: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=1200",
-                badge: "Brand New",
-                desc: "Track-bred aerodynamic masterpiece equipped with naturally aspirated flat-six engine producing blistering performance."
-            },
-            {
-                id: 2,
-                name: "Mercedes-AMG G 63",
-                brand: "Mercedes-AMG",
-                condition: "New",
-                fuel: "Petrol",
-                price: 31000000, // 3.10 Crores
-                priceDisplay: "₹3.10 Crores",
-                hp: "577 HP",
-                cc: "3,982 cc",
-                mileage: "6.1 kmpl",
-                transmission: "9G-TRONIC Auto",
-                year: 2026,
-                img: "https://images.unsplash.com/photo-1520031441872-265e4ff70366?auto=format&fit=crop&q=80&w=1200",
-                badge: "Flagship SUV",
-                desc: "The undisputed icon of luxury off-roaders. Handcrafted V8 biturbo engine with unmistakable side exhaust notes."
-            },
-            {
-                id: 3,
-                name: "BMW M5 Competition",
-                brand: "BMW M",
-                condition: "Used",
-                fuel: "Petrol",
-                price: 13500000, // 1.35 Crores
-                priceDisplay: "₹1.35 Crores",
-                hp: "617 HP",
-                cc: "4,395 cc",
-                mileage: "9.1 kmpl",
-                transmission: "8-Speed M Steptronic",
-                year: 2024,
-                img: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=1200",
-                badge: "Pre-Owned (12k km)",
-                desc: "Immaculate single-owner pre-owned executive powerhouse with M xDrive all-wheel drive system and Merino leather."
-            },
-            {
-                id: 4,
-                name: "Lamborghini Urus S",
-                brand: "Lamborghini",
-                condition: "New",
-                fuel: "Petrol",
-                price: 41800000, // 4.18 Crores
-                priceDisplay: "₹4.18 Crores",
-                hp: "657 HP",
-                cc: "3,996 cc",
-                mileage: "7.8 kmpl",
-                transmission: "8-Speed Automatic",
-                year: 2026,
-                img: "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&q=80&w=1200",
-                badge: "Super SUV",
-                desc: "The soul of a supersports car combined with the supreme functionality of an SUV. Breathtaking acceleration."
-            },
-            {
-                id: 5,
-                name: "Land Rover Defender 110",
-                brand: "Land Rover",
-                condition: "New",
-                fuel: "Diesel",
-                price: 14200000, // 1.42 Crores
-                priceDisplay: "₹1.42 Crores",
-                hp: "296 HP",
-                cc: "2,997 cc",
-                mileage: "11.4 kmpl",
-                transmission: "8-Speed Automatic",
-                year: 2025,
-                img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1200",
-                badge: "In Stock",
-                desc: "Unstoppable capability meets modernist luxury interior. Equipped with air suspension and Meridian 3D surround sound."
-            },
-            {
-                id: 6,
-                name: "Porsche Taycan Turbo S",
-                brand: "Porsche",
-                condition: "New",
-                fuel: "Electric",
-                price: 23500000, // 2.35 Crores
-                priceDisplay: "₹2.35 Crores",
-                hp: "750 HP",
-                cc: "Electric Dual Motor",
-                mileage: "450 km Range",
-                transmission: "2-Speed Automatic",
-                year: 2026,
-                img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=1200",
-                badge: "EV Flagship",
-                desc: "Pure electric sports saloon delivering instantaneous torque and lightning-fast 270kW DC fast charging capability."
+                badge: "Track Master",
+                desc: "Track-bred aerodynamic masterpiece with active DRS and naturally aspirated flat-six engine."
             }
         ];
 
         let comparedCarIds = [];
-        let currentConfig = {
-            model: cars[0],
-            colorName: "Midnight Onyx",
-            colorHex: "#1e293b",
-            colorImg: cars[0].img,
-            colorPrice: 0,
-            trimName: "Carbon & Alcantara",
-            trimPrice: 0
-        };
 
         window.addEventListener('DOMContentLoaded', () => {
             renderCarCatalog(cars);
-            renderConfiguratorButtons();
             calculateEMI();
             renderCompareMatrix();
             populateTestDriveSelect();
@@ -730,22 +982,29 @@
             }, 3500);
         }
 
-        // Filter Functionality
+        function filterByBudgetQuick(min, max) {
+            document.getElementById('filter-price').value = max;
+            document.getElementById('filter-brand').value = 'All';
+            document.getElementById('filter-body').value = 'All';
+            document.getElementById('filter-fuel').value = 'All';
+            applyFilters();
+            window.location.hash = '#catalog';
+        }
+
+        // Advanced Multi-Filter Functionality
         function applyFilters() {
-            const condition = document.getElementById('filter-condition').value;
             const brand = document.getElementById('filter-brand').value;
-            const priceVal = parseInt(document.getElementById('filter-price').value);
+            const bodyType = document.getElementById('filter-body').value;
             const fuel = document.getElementById('filter-fuel').value;
+            const maxPrice = parseInt(document.getElementById('filter-price').value);
+            const condition = document.getElementById('filter-condition').value;
 
             const filtered = cars.filter(car => {
-                if(condition !== 'All' && car.condition !== condition) return false;
                 if(brand !== 'All' && car.brand !== brand) return false;
+                if(bodyType !== 'All' && car.bodyType !== bodyType) return false;
                 if(fuel !== 'All' && car.fuel !== fuel) return false;
-                
-                if(priceVal === 1 && car.price > 10000000) return false;
-                if(priceVal === 2 && car.price > 20000000) return false;
-                if(priceVal === 3 && car.price > 30000000) return false;
-
+                if(car.exPrice > maxPrice) return false;
+                if(condition !== 'All' && car.condition !== condition) return false;
                 return true;
             });
 
@@ -757,7 +1016,7 @@
             grid.innerHTML = '';
 
             if(items.length === 0) {
-                grid.innerHTML = `<div class="col-span-3 text-center py-16 text-slate-400">No luxury cars match your filter criteria. Try resetting filters.</div>`;
+                grid.innerHTML = `<div class="col-span-3 text-center py-16 text-slate-400">No vehicles match your filter criteria. Try broadening your budget range or brand selection.</div>`;
                 return;
             }
 
@@ -768,39 +1027,51 @@
                 card.innerHTML = `
                     <div class="relative overflow-hidden h-60 bg-gradient-to-b from-slate-950 to-slate-900">
                         <span class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full bg-apex-accent/20 text-apex-accent text-xs font-bold border border-apex-accent/30 backdrop-blur-md">${car.badge}</span>
-                        <span class="absolute top-4 right-4 z-10 px-3 py-1 rounded-full bg-slate-900/80 text-slate-300 text-xs font-semibold backdrop-blur-md">${car.condition}</span>
+                        <span class="absolute top-4 right-4 z-10 px-3 py-1 rounded-full bg-slate-900/80 text-slate-300 text-xs font-semibold backdrop-blur-md">${car.brand}</span>
                         <img src="${car.img}" alt="${car.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-xl font-bold text-white">${car.name}</h3>
-                                <div class="text-right">
-                                    <span class="text-xs text-slate-400 block">Price</span>
-                                    <span class="text-base font-black text-apex-accent">${car.priceDisplay}</span>
+                                <div>
+                                    <span class="text-[10px] uppercase tracking-widest text-slate-400 font-semibold">${car.bodyType} • ${car.fuel}</span>
+                                    <h3 class="text-xl font-bold text-white">${car.name}</h3>
                                 </div>
                             </div>
-                            <p class="text-slate-400 text-xs line-clamp-2 mb-6">${car.desc}</p>
+                            
+                            <!-- Price breakdown badge -->
+                            <div class="mb-4 bg-slate-950/80 p-3 rounded-2xl border border-slate-800">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-slate-400">Ex-Showroom:</span>
+                                    <span class="text-white font-bold">${car.exPriceDisplay}</span>
+                                </div>
+                                <div class="flex justify-between text-xs">
+                                    <span class="text-slate-400">On-Road (NCR):</span>
+                                    <span class="text-apex-accent font-black">${car.onRoadPriceDisplay}</span>
+                                </div>
+                            </div>
+
+                            <p class="text-slate-400 text-xs line-clamp-2 mb-4">${car.desc}</p>
                             
                             <div class="grid grid-cols-3 gap-2 bg-slate-950/60 p-3 rounded-2xl border border-slate-800/80 mb-6 text-center">
                                 <div>
-                                    <span class="text-[10px] uppercase text-slate-400 block">Engine</span>
-                                    <span class="text-xs font-bold text-white">${car.cc}</span>
+                                    <span class="text-[10px] uppercase text-slate-400 block">Engine CC</span>
+                                    <span class="text-xs font-bold text-white truncate block">${car.cc}</span>
                                 </div>
                                 <div class="border-x border-slate-800">
                                     <span class="text-[10px] uppercase text-slate-400 block">Mileage</span>
                                     <span class="text-xs font-bold text-white">${car.mileage}</span>
                                 </div>
                                 <div>
-                                    <span class="text-[10px] uppercase text-slate-400 block">Power</span>
-                                    <span class="text-xs font-bold text-white">${car.hp}</span>
+                                    <span class="text-[10px] uppercase text-slate-400 block">Safety</span>
+                                    <span class="text-xs font-bold text-emerald-400">${car.safety}</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-3">
                             <button onclick="openCarModal(${car.id})" class="flex-1 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs transition-all flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-circle-info text-apex-accent"></i> Full Specs
+                                <i class="fa-solid fa-circle-info text-apex-accent"></i> Full Specs & Price
                             </button>
                             <button onclick="toggleCompare(${car.id})" class="px-4 py-3 rounded-xl ${isCompared ? 'bg-apex-accent text-apex-950 font-bold' : 'bg-slate-800 hover:bg-slate-700 text-slate-300'} transition-all text-xs flex items-center gap-1.5" title="Compare Car">
                                 <i class="fa-solid ${isCompared ? 'fa-check' : 'fa-plus'}"></i> ${isCompared ? 'Comparing' : 'Compare'}
@@ -812,35 +1083,50 @@
             });
         }
 
-        // Modal Details
+        // Modal Details with Price Breakdown
         function openCarModal(id) {
             const car = cars.find(c => c.id === id);
             const modal = document.getElementById('car-modal');
             const content = document.getElementById('modal-content');
 
+            const rto = Math.round(car.exPrice * 0.10);
+            const insurance = Math.round(car.exPrice * 0.035);
+            const tcs = car.exPrice > 1000000 ? Math.round(car.exPrice * 0.01) : 0;
+            const fastag = 600;
+
             content.innerHTML = `
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <img src="${car.img}" alt="${car.name}" class="rounded-2xl w-full h-72 object-cover border border-slate-800 shadow-xl">
+                        <img src="${car.img}" alt="${car.name}" class="rounded-2xl w-full h-72 object-cover border border-slate-800 shadow-xl mb-4">
+                        <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+                            <h4 class="text-white font-bold text-xs uppercase tracking-widest text-apex-accent mb-3">On-Road Price Breakdown (Delhi/NCR)</h4>
+                            <div class="space-y-2 text-xs">
+                                <div class="flex justify-between"><span class="text-slate-400">Ex-Showroom Price:</span> <span class="text-white font-semibold">${car.exPriceDisplay}</span></div>
+                                <div class="flex justify-between"><span class="text-slate-400">RTO & Registration (~10%):</span> <span class="text-slate-300">₹${rto.toLocaleString('en-IN')}</span></div>
+                                <div class="flex justify-between"><span class="text-slate-400">Comprehensive Insurance:</span> <span class="text-slate-300">₹${insurance.toLocaleString('en-IN')}</span></div>
+                                ${tcs > 0 ? `<div class="flex justify-between"><span class="text-slate-400">TCS (1% above 10L):</span> <span class="text-slate-300">₹${tcs.toLocaleString('en-IN')}</span></div>` : ''}
+                                <div class="flex justify-between border-t border-slate-800 pt-2"><span class="text-apex-accent font-bold">Total On-Road Price:</span> <span class="text-apex-accent font-black text-sm">${car.onRoadPriceDisplay}</span></div>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <span class="px-3 py-1 rounded-full bg-apex-accent/20 text-apex-accent text-xs font-bold border border-apex-accent/30 inline-block mb-3">${car.badge}</span>
+                        <div class="text-xs uppercase tracking-widest text-slate-400 font-semibold">${car.brand}</div>
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-2">${car.name}</h2>
-                        <div class="text-2xl font-black text-apex-accent mb-4">${car.priceDisplay}</div>
-                        <p class="text-slate-300 text-sm mb-6">${car.desc}</p>
+                        <p class="text-slate-300 text-xs leading-relaxed mb-6">${car.desc}</p>
                         
                         <div class="grid grid-cols-2 gap-3 mb-6 bg-slate-950 p-4 rounded-2xl border border-slate-800 text-sm">
                             <div><span class="text-slate-400 text-xs block">Engine CC:</span> <span class="font-bold text-white">${car.cc}</span></div>
                             <div><span class="text-slate-400 text-xs block">Fuel Type:</span> <span class="font-bold text-white">${car.fuel}</span></div>
                             <div><span class="text-slate-400 text-xs block">Transmission:</span> <span class="font-bold text-white">${car.transmission}</span></div>
                             <div><span class="text-slate-400 text-xs block">Mileage:</span> <span class="font-bold text-white">${car.mileage}</span></div>
-                            <div><span class="text-slate-400 text-xs block">Model Year:</span> <span class="font-bold text-white">${car.year}</span></div>
-                            <div><span class="text-slate-400 text-xs block">Horsepower:</span> <span class="font-bold text-white">${car.hp}</span></div>
+                            <div><span class="text-slate-400 text-xs block">Safety Rating:</span> <span class="font-bold text-emerald-400">${car.safety}</span></div>
+                            <div><span class="text-slate-400 text-xs block">Seating Capacity:</span> <span class="font-bold text-white">${car.seating}</span></div>
                         </div>
 
                         <div class="flex gap-4">
                             <button onclick="closeCarModal(); openTestDriveModalWithCar('${car.name}')" class="flex-1 py-3.5 rounded-xl bg-apex-accent hover:bg-apex-accentHover text-apex-950 font-bold text-sm transition-all shadow-lg shadow-apex-accent/20 flex items-center justify-center gap-2">
-                                <i class="fa-regular fa-calendar-days"></i> Book Test Drive in Delhi/Gurugram
+                                <i class="fa-regular fa-calendar-days"></i> Book Test Drive in Delhi/NCR
                             </button>
                         </div>
                     </div>
@@ -856,69 +1142,6 @@
             modal.classList.add('hidden');
         }
 
-        // Configurator Studio
-        function renderConfiguratorButtons() {
-            const container = document.getElementById('config-model-buttons');
-            container.innerHTML = '';
-            cars.forEach((car) => {
-                const isSelected = currentConfig.model.id === car.id;
-                const btn = document.createElement('button');
-                btn.className = `px-3 py-2.5 rounded-xl text-xs font-semibold border text-left transition-all ${isSelected ? 'bg-apex-accent text-apex-950 border-apex-accent shadow-md' : 'bg-slate-800/60 border-slate-700 text-slate-300 hover:text-white'}`;
-                btn.innerHTML = `<div>${car.name}</div><div class="text-[10px] opacity-80">${car.priceDisplay}</div>`;
-                btn.onclick = () => selectConfigModel(car);
-                container.appendChild(btn);
-            });
-        }
-
-        function selectConfigModel(car) {
-            currentConfig.model = car;
-            currentConfig.colorImg = car.img;
-            document.getElementById('config-model-name').innerText = car.name;
-            document.getElementById('config-badge').innerText = car.condition;
-            document.getElementById('config-car-img').src = car.img;
-            renderConfiguratorButtons();
-            updateConfigTotal();
-        }
-
-        function setExteriorColor(name, hex, imgUrl, price) {
-            currentConfig.colorName = name;
-            currentConfig.colorHex = hex;
-            currentConfig.colorImg = imgUrl;
-            currentConfig.colorPrice = price;
-            document.getElementById('selected-color-name').innerText = name;
-            document.getElementById('config-car-img').src = imgUrl;
-            document.getElementById('floor-glow').style.backgroundColor = hex;
-            updateConfigTotal();
-            showToast(`Applied paint: ${name}`);
-        }
-
-        function setInteriorTrim(name, price) {
-            currentConfig.trimName = name;
-            currentConfig.trimPrice = price;
-            updateConfigTotal();
-            showToast(`Interior selected: ${name}`);
-        }
-
-        function updateConfigTotal() {
-            const total = currentConfig.model.price + currentConfig.colorPrice + currentConfig.trimPrice;
-            // Convert to Crores/Lakhs string format
-            let display = "";
-            if(total >= 10000000) {
-                display = `₹${(total / 10000000).toFixed(2)} Crores`;
-            } else {
-                display = `₹${(total / 100000).toFixed(2)} Lakhs`;
-            }
-            document.getElementById('config-total-price').innerText = display;
-        }
-
-        function rotateCarView() {
-            showToast('360° Studio perspective rotated');
-        }
-
-        function openTestDriveModalFromConfig() {
-            openTestDriveModalWithCar(currentConfig.model.name);
-        }
-
         // EMI Calculator in INR
         function calculateEMI() {
             const price = parseFloat(document.getElementById('calc-price').value);
@@ -926,13 +1149,13 @@
             const term = parseInt(document.getElementById('calc-term').value);
             const rate = parseFloat(document.getElementById('calc-rate').value);
 
-            document.getElementById('calc-price-val').innerText = formatINR(price);
-            document.getElementById('calc-down-val').innerText = formatINR(down);
-            document.getElementById('calc-term-val').innerText = `${term} Months (${term/12} Years)`;
+            document.getElementById('calc-price-val').innerText = '₹' + (price/100000).toFixed(2) + ' Lakhs';
+            document.getElementById('calc-down-val').innerText = '₹' + (down/100000).toFixed(2) + ' Lakhs';
+            document.getElementById('calc-term-val').innerText = `${term} Months (${(term/12).toFixed(1)} Years)`;
             document.getElementById('calc-rate-val').innerText = `${rate.toFixed(1)}%`;
 
             const loanAmount = Math.max(0, price - down);
-            document.getElementById('financed-amount').innerText = formatINR(loanAmount);
+            document.getElementById('financed-amount').innerText = '₹' + (loanAmount/100000).toFixed(2) + ' Lakhs';
 
             const monthlyRate = (rate / 100) / 12;
             let monthlyPayment = 0;
@@ -947,16 +1170,12 @@
             const totalInterest = (monthlyPayment * term) - loanAmount;
             const totalCost = down + loanAmount + (totalInterest > 0 ? totalInterest : 0);
 
-            document.getElementById('monthly-payment').innerHTML = `${formatINR(Math.round(monthlyPayment))}<span class="text-sm font-normal text-slate-400">/mo</span>`;
-            document.getElementById('total-interest').innerText = formatINR(Math.round(totalInterest > 0 ? totalInterest : 0));
-            document.getElementById('total-cost').innerText = formatINR(Math.round(totalCost));
+            document.getElementById('monthly-payment').innerHTML = `₹${Math.round(monthlyPayment).toLocaleString('en-IN')}<span class="text-sm font-normal text-slate-400">/mo</span>`;
+            document.getElementById('total-interest').innerText = '₹' + Math.round(totalInterest > 0 ? totalInterest : 0).toLocaleString('en-IN');
+            document.getElementById('total-cost').innerText = '₹' + Math.round(totalCost).toLocaleString('en-IN');
         }
 
-        function formatINR(amount) {
-            return '₹' + amount.toLocaleString('en-IN');
-        }
-
-        // Compare Cars Feature
+        // Compare Cars Feature (Same Price Range Comparison)
         function toggleCompare(id) {
             if(comparedCarIds.includes(id)) {
                 comparedCarIds = comparedCarIds.filter(item => item !== id);
@@ -980,8 +1199,8 @@
                 container.innerHTML = `
                     <div class="text-center py-12 bg-slate-900/40 rounded-3xl border border-slate-800">
                         <i class="fa-solid fa-scale-balanced text-3xl text-slate-600 mb-3"></i>
-                        <h4 class="text-white font-semibold text-base">No Cars Selected for Comparison</h4>
-                        <p class="text-slate-400 text-xs mt-1">Click "Compare" on any car card in the showroom above to evaluate specifications side-by-side.</p>
+                        <h4 class="text-white font-semibold text-base">Compare Vehicles in Similar Price Brackets</h4>
+                        <p class="text-slate-400 text-xs mt-1">Click "Compare" on any car card in the showroom above to evaluate Indian On-Road prices, mileage, and specifications side-by-side.</p>
                     </div>
                 `;
                 return;
@@ -999,7 +1218,10 @@
                 tableHtml += `
                     <th class="p-4 w-1/4">
                         <div class="flex items-center justify-between">
-                            <span class="text-white font-bold text-sm">${car.name}</span>
+                            <div>
+                                <span class="text-[10px] text-apex-accent font-bold">${car.brand}</span>
+                                <span class="text-white font-bold text-sm block">${car.name}</span>
+                            </div>
                             <button onclick="toggleCompare(${car.id})" class="text-slate-400 hover:text-red-400 p-1"><i class="fa-solid fa-xmark"></i></button>
                         </div>
                     </th>
@@ -1007,15 +1229,21 @@
             });
             tableHtml += `</tr></thead><tbody class="divide-y divide-slate-800 text-sm">`;
 
-            tableHtml += `<tr><td class="p-4 text-slate-400 font-medium">Preview</td>`;
+            tableHtml += `<tr><td class="p-4 text-slate-400 font-medium">Vehicle Preview</td>`;
             comparedCars.forEach(car => {
                 tableHtml += `<td class="p-4"><img src="${car.img}" class="w-full h-32 object-cover rounded-xl border border-slate-800"></td>`;
             });
             tableHtml += `</tr>`;
 
-            tableHtml += `<tr><td class="p-4 text-slate-400 font-medium">Price</td>`;
+            tableHtml += `<tr><td class="p-4 text-slate-400 font-medium">Ex-Showroom Price</td>`;
             comparedCars.forEach(car => {
-                tableHtml += `<td class="p-4 font-bold text-apex-accent">${car.priceDisplay}</td>`;
+                tableHtml += `<td class="p-4 font-bold text-white">${car.exPriceDisplay}</td>`;
+            });
+            tableHtml += `</tr>`;
+
+            tableHtml += `<tr><td class="p-4 text-slate-400 font-medium">On-Road Price (NCR)</td>`;
+            comparedCars.forEach(car => {
+                tableHtml += `<td class="p-4 font-black text-apex-accent">${car.onRoadPriceDisplay}</td>`;
             });
             tableHtml += `</tr>`;
 
@@ -1025,21 +1253,21 @@
             });
             tableHtml += `</tr>`;
 
-            tableHtml += `<tr><td class="p-4 text-slate-400 font-medium">Horsepower</td>`;
-            comparedCars.forEach(car => {
-                tableHtml += `<td class="p-4 text-white font-semibold">${car.hp}</td>`;
-            });
-            tableHtml += `</tr>`;
-
             tableHtml += `<tr><td class="p-4 text-slate-400 font-medium">Mileage</td>`;
             comparedCars.forEach(car => {
                 tableHtml += `<td class="p-4 text-white font-semibold">${car.mileage}</td>`;
             });
             tableHtml += `</tr>`;
 
-            tableHtml += `<tr><td class="p-4 text-slate-400 font-medium">Transmission</td>`;
+            tableHtml += `<tr><td class="p-4 text-slate-400 font-medium">Safety Rating</td>`;
             comparedCars.forEach(car => {
-                tableHtml += `<td class="p-4 text-white font-semibold">${car.transmission}</td>`;
+                tableHtml += `<td class="p-4 text-emerald-400 font-bold">${car.safety}</td>`;
+            });
+            tableHtml += `</tr>`;
+
+            tableHtml += `<tr><td class="p-4 text-slate-400 font-medium">Seating Capacity</td>`;
+            comparedCars.forEach(car => {
+                tableHtml += `<td class="p-4 text-white font-semibold">${car.seating}</td>`;
             });
             tableHtml += `</tr>`;
 
@@ -1078,7 +1306,7 @@
             cars.forEach(car => {
                 const opt = document.createElement('option');
                 opt.value = car.name;
-                opt.innerText = `${car.name} (${car.priceDisplay})`;
+                opt.innerText = `${car.brand} ${car.name} (${car.exPriceDisplay})`;
                 select.appendChild(opt);
             });
         }
